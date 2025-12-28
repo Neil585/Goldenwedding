@@ -227,7 +227,7 @@ export default function Index() {
       <ScrollChapter tone="light">
         <div className="max-w-5xl mx-auto">
           <SectionTitle
-            title="Ils nous font confiance"
+            title="Ils nous ont fait confiance"
             subtitle="Découvrez les témoignages de nos clients satisfaits."
           />
         </div>
