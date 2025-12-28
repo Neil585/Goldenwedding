@@ -45,7 +45,7 @@ const vehicles: Vehicle[] = [
   {
     name: "Rolls-Royce Ghost",
     image: rollsRoycePhantom,
-    seats: 5,
+    seats: 4,
     features: [
       { text: "Luxe inégalé", icon: "crown" },
       { text: "Intérieur haut de gamme", icon: "sofa" },
@@ -56,7 +56,7 @@ const vehicles: Vehicle[] = [
   {
     name: "BMW M760",
     image: bmwM760,
-    seats: 5,
+    seats: 4,
     features: [
       { text: "571 chevaux de puissance", icon: "zap" },
       { text: "Design sportif élégant", icon: "car" },
@@ -111,7 +111,7 @@ const vehicles: Vehicle[] = [
   {
     name: "Rolls-Royce Phantom",
     image: rollsRoycePhantomBlack,
-    seats: 5,
+    seats: 4,
     features: [
       { text: "Summum du luxe automobile", icon: "crown" },
       { text: "Raffinement absolu", icon: "gem" },
@@ -133,7 +133,7 @@ const vehicles: Vehicle[] = [
   {
     name: "Mercedes Classe G",
     image: mercedesGWagon,
-    seats: 5,
+    seats: 4,
     features: [
       { text: "Puissance tout-terrain", icon: "mountain" },
       { text: "Design iconique", icon: "shield" },
