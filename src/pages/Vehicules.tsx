@@ -111,7 +111,7 @@ const vehicles: Vehicle[] = [
   {
     name: "Rolls-Royce Phantom",
     image: rollsRoycePhantomBlack,
-    seats: 4,
+    seats: 5,
     features: [
       { text: "Summum du luxe automobile", icon: "crown" },
       { text: "Raffinement absolu", icon: "gem" },
@@ -133,7 +133,7 @@ const vehicles: Vehicle[] = [
   {
     name: "Mercedes Classe G",
     image: mercedesGWagon,
-    seats: 4,
+    seats: 5,
     features: [
       { text: "Puissance tout-terrain", icon: "mountain" },
       { text: "Design iconique", icon: "shield" },
@@ -246,26 +246,20 @@ export default function Vehicules() {
           <div className="absolute inset-0 bg-[#2A2A2A]/50" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/35 to-black/70" />
         </div>
-        <div className="container mx-auto text-center relative z-10">
-          <div className="inline-block w-full max-w-[560px] rounded-3xl px-5 py-7 md:px-7 md:py-8 bg-black/45 backdrop-blur-md border border-[#C9A961]/35 shadow-[0_18px_60px_rgba(0,0,0,0.65)]">
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-[#C9A961] drop-shadow-[0_10px_24px_rgba(0,0,0,0.95)]">
-              Nos Véhicules
-            </h1>
-            <p className="mt-4 text-lg text-[#F5F1E8]/90 max-w-[640px] mx-auto">
-              Découvrez notre flotte de véhicules haut de gamme.
-            </p>
-          </div>
-        </div>
       </section>
 
       {/* Vehicles Grid */}
       <section className="py-16 lg:py-24 bg-transparent relative z-10">
         <div className="container mx-auto">
-          <SectionTitle
-            title="Notre Flotte"
-            subtitle="Des véhicules sélectionnés avec soin pour vous offrir le meilleur du luxe."
-            light={true}
-          />
+          <div className="mb-12 lg:mb-16 text-center">
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#C9A961]">
+              Nos Véhicules
+            </h2>
+            <p className="text-lg max-w-2xl mx-auto text-[#F5F1E8]/70">
+              Des véhicules sélectionnés avec soin pour vous offrir le meilleur du luxe.
+            </p>
+            <div className="mt-6 w-20 h-1 bg-[#C9A961] mx-auto" />
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {vehicles.map((vehicle, index) => (
               <VehicleCardWithColor key={vehicle.name} vehicle={vehicle} index={index} />
